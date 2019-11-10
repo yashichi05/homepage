@@ -1,0 +1,274 @@
+/*
+* {
+    border: 2px solid #fff;
+}
+*/
+
+body,
+html {
+    background: #000;
+    font-family: 'Noto Sans TC', sans-serif;
+    margin: 0;
+    letter-spacing: 2px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.bar {
+    position: fixed;
+    background: #333;
+    height: 0vh;
+    width: 50px;
+    left: 0;
+    top: 0;
+
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.barback {
+    position: fixed;
+    background: #333;
+    opacity: 0.5;
+    height: 100vh;
+    width: 0%;
+    z-index: 1;
+    float: right;
+    right: 0;
+    top: 0;
+
+}
+
+.icon {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 50px;
+    height: 60px;
+}
+
+.cir {
+    background: #fff;
+    box-sizing: border-box;
+    width: 0px;
+    height: 0px;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.icondiv {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.cir1 {
+    top: 33%;
+    left: 33%;
+    animation: ballani 1.2s infinite alternate;
+}
+
+.cir2 {
+    left: 66%;
+    top: 50%;
+    animation: ballani 1.2s infinite alternate;
+    animation-delay: 0.6s;
+}
+
+.cir3 {
+    top: 67%;
+    left: 33%;
+    animation: ballani 1.2s infinite alternate;
+}
+
+@keyframes ballani {
+    100% {
+        transform: scale(2);
+    }
+}
+
+.content {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+}
+
+.content1 {
+    align-items: center;
+}
+
+.carddiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.row {
+
+
+    display: flex;
+}
+
+.img4 {
+    width: 300px;
+    height: 300px;
+    background: url("../img/colour-1885352_1920.jpg") no-repeat;
+    background-size: cover;
+    opacity: 0;
+}
+.card-body{
+    color: #fff;
+    padding: 45px;
+    padding-top: 20px;
+    opacity: 0;
+}
+.carddivin{
+    border: 1px solid #fff;
+    opacity: 0;
+}
+.text-muted{
+    border: 1px solid #fff;
+    margin: 6px;
+    border-radius: 3px;
+    padding: 6px;
+}
+
+.card-title{
+    font-size: 18px;
+    
+}
+.firstcontent {
+    align-items: center;
+}
+
+.barspace {
+    min-width: 40px;
+    max-width: 40px;
+}
+
+.indiv {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex: 5;
+    justify-content: center;
+}
+
+.indiv h4 {
+    opacity: 0;
+    font-weight: 400;
+    margin: 0;
+    width: 500px;
+    color: #fff
+}
+
+.h4bt {
+
+    padding-top: 10px;
+}
+
+.h4tp {
+    opacity: 0;
+    padding-bottom: 10px;
+}
+
+section:nth-child(2),
+section:nth-child(3) {
+    background: #000;
+}
+
+.indiv .right {
+    text-align: right;
+}
+
+.workimg {
+
+    opacity: 0;
+    border-radius: 20px;
+    /*    overflow: hidden;*/
+    width: 500px;
+    height: 400px;
+
+}
+
+.img1 {
+    color: #fff;
+    font-size: 48px;
+    opacity: 1;
+    display: none;
+    width: auto;
+    height: auto;
+}
+
+.img3 {
+    background: url("../img/work1.jpg") no-repeat;
+    background-size: cover;
+}
+
+.img2 {
+    background: url("../img/work2.jpg") no-repeat;
+    background-size: cover;
+
+}
+
+.outout {
+    width: 100%;
+    overflow: hidden;
+
+}
+
+.out {
+    background: #000;
+    /*    background: url("../img/background.jpg") no-repeat;*/
+    background-attachment: fixed;
+    background-size: auto;
+    overflow: hidden;
+
+}
+
+.bartext {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 25vh;
+    max-height: 25vh;
+    flex: 1;
+    opacity: 0;
+}
+
+.bartext h1,
+.bartext h4 {
+    color: #fff;
+    margin: 0;
+
+    font-weight: 1000;
+}
+
+.bartext h4 {
+    font-weight: 100;
+}
+
+/*
+.tri {
+    position: fixed;
+    bottom: -50px;
+    right: -50px;
+    transform: rotate(45deg);
+    background: #333;
+    width: 100px;
+    height: 100px;
+    z-index: 998;
+}
+*/
+
+.space_content {
+    height: 100px;
+}
